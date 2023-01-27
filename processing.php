@@ -4,17 +4,18 @@
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);
 
-    $nome = $_GET['nome'];
-    $cognome = $_GET['cognome'];
+  /*   $nome = $_GET['nome'];
+    $cognome = $_GET['cognome']; */
 
     $paragraph = $_GET['paragraph'];
     $censored_word = $_GET['censored_word'];
-
-    $email = $_POST['cognome'];
-    $password = $_POST['cognome'];
-
+    
     $censored_paragraph = str_replace($censored_word, "***", $paragraph);
     echo "Il paragrafo censurato è: $censored_paragraph";
+/* 
+    $email = $_POST['cognome'];
+    $password = $_POST['cognome']; */
+
     
 ?>
 
@@ -30,9 +31,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>
-            Benvenuto<?php echo $nome." ".$cognome; ?>
-        </h1>
+        
         <div class="parag">
             <h1>
                 <?php echo $paragraph."<br> La tua frase è lunga: ".strlen($paragraph)." caratteri.";?>

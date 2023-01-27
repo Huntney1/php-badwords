@@ -41,10 +41,6 @@ echo $NOME; */
         <!-- method [GET] 'espone i dati nell'URL' -->
         <form method="GET" action="processing.php">
 
-            <input type="text" id="nome" name="nome" placeholder="Nome">
-            <input type="text" id="cognome" name="cognome" placeholder="Cognome">
-
-            <br>
 
             <label for="censored_word">Parola da censurare:</label>
             <input type="text" id="censored_word" name="censored_word">
@@ -57,16 +53,7 @@ echo $NOME; */
             <input type="submit" value="Invia">
 
         </form>
-        <!-- method [Post] 'non espone i dati nell'URL' -->
-        <form method="POST" action="processing.php">
-
-            <input type="email" name='email' id='email' placeholder="Inserisci Mail">
-            <input type="password" name="password" id="password" placeholder="Inserisci Password">
-            <br>
-
-            <input type="submit" value="Invia">
-                
-        </form>
+      
     </div>
 </body>
 
