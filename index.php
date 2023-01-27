@@ -54,11 +54,18 @@ echo $NOME; */
             <label for="paragraph">Paragrafo:</label>
             <textarea id="paragraph" name="paragraph"></textarea>
 
-            <input type="submit" value="Invia">
+            <button id="myButton" type="submit" value="Invia">Invia</button>
 
+            <script>
+                const button = document.getElementById('myButton');
+                button.addEventListener('keyup', function(enter){
+                console.log('Tasto premuto: ', enter.key);
+            });
+            </script>
         </form>
     
     </div>
 </body>
+
 
 </html>

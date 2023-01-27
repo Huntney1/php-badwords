@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
-.text-red{
+#myButton{
     color: red;
+    width: 6em;
+    height: 2em;
 }
