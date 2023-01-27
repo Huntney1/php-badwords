@@ -40,7 +40,11 @@ echo $NOME; */
         <!-- in 'action' ci va solo il 'pat' (nome) del fail che voglio raggiungere  -->
         <!-- method [GET] 'espone i dati nell'URL' -->
         <form method="GET" action="processing.php">
+            
+            <input type="text" id="nome" name="nome" placeholder="Nome">
+            <input type="text" id="cognome" name="cognome" placeholder="Cognome">
 
+            <br>
 
             <label for="censored_word">Parola da censurare:</label>
             <input type="text" id="censored_word" name="censored_word">
@@ -53,7 +57,7 @@ echo $NOME; */
             <input type="submit" value="Invia">
 
         </form>
-      
+    
     </div>
 </body>
 
