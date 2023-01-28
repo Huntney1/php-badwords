@@ -11,7 +11,7 @@
     $censored_word = $_GET['censored_word'];
     
     $censored_paragraph = str_replace($censored_word, "***", $paragraph);
-    echo "Il paragrafo censurato è: $censored_paragraph";
+    
 /* 
     $email = $_POST['cognome'];
     $password = $_POST['cognome']; */
@@ -27,16 +27,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Processing</title>
 
-    <link rel="stylesheet" href="./CSS/style.css">
+    <!-- <link rel="stylesheet" href="./CSS/style.css"> -->
 </head>
 <body>
-    <div class="container">
+    <div class="container_2">
+   <?php echo "Il paragrafo censurato è: $censored_paragraph";?>
         <h1>
             Benvenuto <?php echo $nome." ".$cognome; ?>
         </h1>
         <div class="parag">
             <h1>
-                <?php /* echo $paragraph. */"<br> La tua frase è lunga: ".strlen($paragraph)." caratteri.";?>
+                <?php echo $paragraph."<br> La tua frase è lunga: ".strlen($paragraph)." caratteri contando gli spazi vuoti.!.";?>
             </h1>
         </div>   
     
