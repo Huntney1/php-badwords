@@ -11,9 +11,9 @@ body{
 
 .row {
     position: absolute;
-  text-align: center;
-  top: 50%;
-  left: 50%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
 } 
 
 
@@ -22,10 +22,6 @@ body{
     color: #fff;
 }
 
-/* #myButton{
-    width: 6em;
-    height: 2em;
-} */
 #myButton{
     position: absolute;
     border: 2px solid white;
@@ -37,7 +33,7 @@ body{
     font-size: 2em;
     border-radius: 5px;
     opacity: .5;
-    top: 35vh;
+    top: 40vh;
     bottom: 0px;
     left: 0px;
     right: 0px;

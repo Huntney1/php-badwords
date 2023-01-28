@@ -46,8 +46,8 @@ echo $NOME; */
 
 
     <!-- JavaScript CDN Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+   <!--  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
 </head>
 
 <body style="background-color: #5800FF;">
@@ -83,17 +83,12 @@ echo $NOME; */
                     <textarea id="paragraph" name="paragraph"></textarea>
 
                     <button id="myButton" type="submit" value="Invia">Invia</button>
+
                 </form>
             </div>
         </div>
     </div>
-    <!-- script (keyup_enter.key) -->
-    <script>
-        const button = document.getElementById('myButton');
-        button.addEventListener('keyup', function(enter){
-        console.log('Tasto premuto: ', enter.key);
-    });
-    </script>
+    <script type="text/javascript" src="./js/script.js"></script>
 </body>
 
 
