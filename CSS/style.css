@@ -29,6 +29,10 @@ div#anag {
     margin: -1em;
 }
 
+.anagInpN, .anagInpC {
+    border: 1px solid red;
+}
+
 label#titleParag {
     display: block;
 }

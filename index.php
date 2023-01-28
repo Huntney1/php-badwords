@@ -65,8 +65,8 @@ echo $NOME; */
                             <label for="cognome">Cognome</label>
                         </div>
                         <br>
-                            <input type="text" id="nome" name="nome" placeholder="Nome">
-                            <input type="text" id="cognome" name="cognome" placeholder="Cognome">
+                            <input class="anagInpN" type="text" id="nome" name="nome" placeholder="Nome">
+                            <input class="anagInpC" type="text" id="cognome" name="cognome" placeholder="Cognome">
                     </div>
                     <br>  
 
