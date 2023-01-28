@@ -60,27 +60,27 @@ echo $NOME; */
 
                     <!-- input con anagrafica (Nome & Cognome)-->
                     <div class="anagrafe">
-                        <div class="d-flex justify-content-around mt-1">
-                        <label for="name">Nome</label>
-                        <label for="cognome">Cognome</label>
-                    </div>
+                        <div id="anag" class="d-flex justify-content-around text-center align-middle mt-1">
+                            <label for="name">Nome</label>
+                            <label for="cognome">Cognome</label>
+                        </div>
                         <br>
-                        <input type="text" id="nome" name="nome" placeholder="Nome">
-                        <input type="text" id="cognome" name="cognome" placeholder="Cognome">
+                            <input type="text" id="nome" name="nome" placeholder="Nome">
+                            <input type="text" id="cognome" name="cognome" placeholder="Cognome">
                     </div>
                     <br>  
 
                     <div class="censured">
                         <!-- parola da censurare censurata -->
-                        <input type="text" id="censored_word" name="censored_word">
-                        <label for="censored_word">Parola da censurare:</label>
+                        <input type="text" id="censored_word" name="censored_word" placeholder="Inserisci Censura">
+                        <label for="censored_word"> Parola da censurare </label>
                     </div>
 
                     <br>
                     <!-- Paragrafo text area (crei un testo con la parola da censurare) -->
                 
-                    <label for="paragraph">Paragrafo:</label>
-                    <textarea id="paragraph" name="paragraph"></textarea>
+                    <label for="paragraph" id="titleParag">Paragrafo</label>
+                    <textarea class="textParag" id="paragraph" name="paragraph" placeholder="Inserisci il TSesto"></textarea>
 
                     <button id="myButton" type="submit" value="Invia">Invia</button>
 

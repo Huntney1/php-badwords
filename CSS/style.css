@@ -19,21 +19,37 @@ body{
 
 #container-box{
     background-color: black;
+    border-radius: 1em;
+    border: 3px solid #0096FF;
     color: #fff;
+    padding: 0.5em 3em;
+}
+
+div#anag {
+    margin: -1em;
+}
+
+label#titleParag {
+    display: block;
+}
+
+textarea.textParag {
+    margin: 1em 0em 2em 0em;
 }
 
 #myButton{
     position: absolute;
-    border: 2px solid white;
+    border: 2px solid #00D7FF;
+    /* border: none; */
     background: transparent;
     font-family: 'Roboto', sans-serif;
     color: white;
-    width: 250px;
-    height: 50px;
+    width: 2.5em;
+    height: 2.5;
     font-size: 2em;
-    border-radius: 5px;
+    border-radius: 6em;
     opacity: .5;
-    top: 40vh;
+    top: 42.5vh;
     bottom: 0px;
     left: 0px;
     right: 0px;
@@ -42,10 +58,10 @@ body{
   }
   
   #myButton:hover{
-    border: 2px solid #104F55;
+    border: 2px solid #0096FF;
     background-color: rgba(365,365,365,0.5);
     cursor: pointer;
-    color: #104F55;
+    color: #0096FF;
     opacity: .8;
     transition: .3s;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
