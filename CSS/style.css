@@ -29,9 +29,28 @@ div#anag {
     margin: -1em;
 }
 
-.anagInpN, .anagInpC {
-    border: 1px solid red;
+.anagInpN, .anagInpC, input{
+    text-align: center;
+    border: 1px solid #0096FF;
+    border-radius: 2em ;
+
 }
+input::placeholder {
+    color: #5800FF;
+}
+
+textarea {
+    border: 1px solid #0096FF;
+    border-radius: 0.5em ;
+    width: 22em;
+    height: 5em;
+}
+
+textarea::placeholder {
+    color: #5800FF;
+    text-align: center;
+
+  }
 
 label#titleParag {
     display: block;
@@ -53,7 +72,7 @@ textarea.textParag {
     font-size: 2em;
     border-radius: 6em;
     opacity: .5;
-    top: 42.5vh;
+    top: 47vh;
     bottom: 0px;
     left: 0px;
     right: 0px;

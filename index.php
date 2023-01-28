@@ -61,8 +61,8 @@ echo $NOME; */
                     <!-- input con anagrafica (Nome & Cognome)-->
                     <div class="anagrafe">
                         <div id="anag" class="d-flex justify-content-around text-center align-middle mt-1">
-                            <label for="name">{ Nome }</label>
-                            <label for="cognome">{ Cognome }</label>
+                            <label for="name"> Nome </label>
+                            <label for="cognome"> Cognome </label>
                         </div>
                         <br>
                             <input class="anagInpN" type="text" id="nome" name="nome" placeholder="Nome">
@@ -73,14 +73,14 @@ echo $NOME; */
                     <div class="censured">
                         <!-- parola da censurare censurata -->
                         <input type="text" id="censored_word" name="censored_word" placeholder="Inserisci Censura">
-                        <label for="censored_word"> { Parola da censurare } </label>
+                        <label for="censored_word"> Parola da censurare </label>
                     </div>
 
                     <br>
                     <!-- Paragrafo text area (crei un testo con la parola da censurare) -->
                 
-                    <label for="paragraph" id="titleParag">{ Paragrafo }</label>
-                    <textarea class="textParag" id="paragraph" name="paragraph" placeholder="Inserisci il TSesto"></textarea>
+                    <label for="paragraph" id="titleParag"> Paragrafo </label>
+                    <textarea class="textParag" id="paragraph" name="paragraph" placeholder="Inserisci il Testo"></textarea>
 
                     <button id="myButton" type="submit" value="Invia">Invia</button>
 
