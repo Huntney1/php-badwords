@@ -60,9 +60,10 @@ echo $NOME; */
 
                     <!-- input con anagrafica (Nome & Cognome)-->
                     <div class="anagrafe">
-                        <div class="d-flex justify-content-evenly"></div>
+                        <div class="d-flex justify-content-around mt-1">
                         <label for="name">Nome</label>
                         <label for="cognome">Cognome</label>
+                    </div>
                         <br>
                         <input type="text" id="nome" name="nome" placeholder="Nome">
                         <input type="text" id="cognome" name="cognome" placeholder="Cognome">
