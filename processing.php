@@ -8,8 +8,9 @@
     $cognome = $_GET['cognome']; 
 
     $paragraph = $_GET['paragraph'];
-    $censored_word = $_GET['censored_word'];
+    $censored_word = $_POST['censored_word'];
     
+    /* cambio il valore censurandolo *** */
     $censored_paragraph = str_replace($censored_word, "***", $paragraph);
     
 /* 
