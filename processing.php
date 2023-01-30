@@ -10,7 +10,7 @@
     $paragraph = $_GET['paragraph'];
     $censored_word = $_POST['censored_word'];
     
-    /* cambio il valore censurandolo *** */
+    /* cambio il valore iniziale censurandolo *** */
     $censored_paragraph = str_replace($censored_word, "***", $paragraph);
     
 /* 
