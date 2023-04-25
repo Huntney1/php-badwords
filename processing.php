@@ -40,24 +40,26 @@ $censored_paragraph = str_replace($censored_word, "***", $paragraph);
 <body style="background-color: #5800FF;">
     <div class="container_2 container-xl">
         <div class="row">
-            <div class="col my-5 shadow-2 border border-primary rounded-4">
-                <h1 class="mt-5">
-                    Benvenuto
-                </h1>
+            <div class="col my-5 shadow-2 border border-primary rounded-4 d-flex justify-contetn-center">
 
-                <h2 class="text-light">
-                    <?php echo $nome . " " . $cognome; ?>
-                </h2>
+                <div class="shadow rounded-start-4 w-50 text-center m-3">
+                    <h1 class="mt-4">
+                        Benvenuto
+                    </h1>
+                    <h2 class="text-light">
+                        <?php echo $nome . " " . $cognome; ?>
+                    </h2>
+                </div>
 
-                <div class="parag">
-                    <h1>
-                        Il paragrafo contiene:
+                <div class="parag shadow rounded-end-4 m-2">
+                    <h1 class="mt-4">
+                        Il paragrafo contiene la seguente frase:
                     </h1>
                     <h2 class="text-light">
                         <?php echo $paragraph; ?>
                     </h2>
                     <h1>
-                        Il Paragrafo con la parola censurata è:
+                        La frase con la parola censurata è:
                     </h1>
                     <h2 class="text-warning">
                         <?php echo $censored_paragraph; ?>
@@ -65,9 +67,9 @@ $censored_paragraph = str_replace($censored_word, "***", $paragraph);
                     <h1>
                         La parola censurata era:
                     </h1>
-                    <h2 class="text-warning">
+                    <h1 class="text-warning">
                         <?php echo $censored_word; ?>
-                    </h2>
+                    </h1>
                     <h1 class="text-light">
                         <?php echo "La tua frase censurata è lunga: " . strlen($censored_word) . " caratteri."; ?>
                     </h1>
