@@ -49,6 +49,7 @@ $censored_paragraph = str_replace($censored_word, "***", $paragraph);
                     <h2 class="text-light">
                         <?php echo $nome . " " . $cognome; ?>
                     </h2>
+                    
                 </div>
 
                 <div class="parag shadow rounded-end-4 m-2">
@@ -77,7 +78,8 @@ $censored_paragraph = str_replace($censored_word, "***", $paragraph);
                         <?php echo "La frase ha la lunghezza di: " . strlen($paragraph) . " caratteri contando gli spazi vuoti.!."; ?>
                     </h1>
                 </div>
-            </div>
+            
+            </div>  
         </div>
     </div>
 
