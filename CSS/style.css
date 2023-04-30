@@ -15,14 +15,15 @@ body{
 #container-box{
     border-radius: 1em;
     border: 3px solid #0096FF;
+
 }
 
-.anagInpC, input{
+/* .anagInpC, input{
     text-align: center;
     
 
-}
-::placeholder {
+} */
+input::placeholder {
     color: #5800FF;
     text-align: center;
 }
