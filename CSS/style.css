@@ -8,35 +8,23 @@ body{
     background-color: black;
 }
 
-
-.row {
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-} 
-
+#margin-row{
+    margin-top: 17%;
+}
 
 #container-box{
-    background-color: black;
     border-radius: 1em;
     border: 3px solid #0096FF;
-    color: #00D7FF;
-    padding: 0.5em 3em;
 }
 
-div#anag {
-    margin: -1em;
-}
-
-.anagInpN, .anagInpC, input{
+.anagInpC, input{
     text-align: center;
-    border: 1px solid #0096FF;
-    border-radius: 2em ;
+    
 
 }
-input::placeholder {
+::placeholder {
     color: #5800FF;
+    text-align: center;
 }
 
 textarea {
@@ -61,28 +49,28 @@ textarea.textParag {
 }
 
 #myButton{
-    position: absolute;
+    /* position: absolute; */
     border: 2px solid #00D7FF;
     /* border: none; */
-    background: transparent;
+   background: transparent;
     font-family: 'Roboto', sans-serif;
     color: white;
     width: 2.5em;
     height: 2.5em;
     font-size: 2em;
-    border-radius: 6em;
+    /* border-radius: 6em; */
     opacity: .5;
-    top: 47vh;
+    /* top: 47vh;
     bottom: 0px;
     left: 0px;
-    right: 0px;
+    right: 0px; */
     margin: auto;
     transition: .3s;
   }
   
   #myButton:hover{
-    width: 250px;
-    height: 50px;
+    width: 25%;
+    height: 2%;
     border: 2px solid #0096FF;
     background-color: #00D7FF;
     /* background-color: rgba(365,365,365,0.5); */

@@ -4,11 +4,11 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-$nome = $_GET['nome'];
-$cognome = $_GET['cognome'];
+$nome = $_POST['nome'];
+$cognome = $_POST['cognome'];
 
-$paragraph = $_GET['paragraph'];
-$censored_word = $_GET['censored_word'];
+$paragraph = $_POST['paragraph'];
+$censored_word = $_POST['censored_word'];
 
 /* cambio il valore iniziale censurandolo *** */
 $censored_paragraph = str_replace($censored_word, "***", $paragraph);
@@ -16,7 +16,6 @@ $censored_paragraph = str_replace($censored_word, "***", $paragraph);
 /* 
     $email = $_POST['cognome'];
     $password = $_POST['cognome']; */
-
 
 ?>
 
