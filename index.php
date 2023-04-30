@@ -36,7 +36,7 @@ error_reporting(E_ALL);
                 <!-- method [GET] 'espone i dati nell'URL' -->
                 <form method="POST" action="./processing.php">
 
-                    <div class="continer-lg">
+                    <div class="continer-lg text-center">
 
                         <!-- input con anagrafica (Nome & Cognome)-->
                         <div class="anagrafe row">
@@ -45,7 +45,7 @@ error_reporting(E_ALL);
 
                                 <div class="mb-3">
 
-                                    <div class="col-12 d-flex justify-content-between gap-4">
+                                    <div class="col-12 d-flex justify-content-between gap-5">
 
                                         <div>
                                             <label for="name" class="form-label"> Nome </label>
@@ -56,7 +56,7 @@ error_reporting(E_ALL);
                                             <label for="name" class="form-label"> Cognome </label>
                                             <input class="form-control rounded-pill border border-3 border-info" type="text" id="cognome" name="cognome" placeholder="Cognome">
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -64,10 +64,12 @@ error_reporting(E_ALL);
 
                         <br>
 
+                        <!-- parola da censurare censurata -->
                         <div class="censured">
-                            <!-- parola da censurare censurata -->
-                            <input type="text" id="censored_word" name="censored_word" placeholder="Inserisci Censura">
+
                             <label for="censored_word"> Parola da censurare </label>
+                            <input class="form-control rounded-pill border border-3 border-info my-3" type="text" id="censored_word" name="censored_word" placeholder="Inserisci Censura">
+
                         </div>
 
                         <br>
