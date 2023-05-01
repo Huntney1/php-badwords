@@ -1,38 +1,35 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: black;
 }
 
-#margin-row{
-    margin-top: 6%;
-}
-
-#container-box{
-    border-radius: 1em;
-    border: 3px solid #0096FF;
-
-}
-
-/* .anagInpC, input{
-    text-align: center;
-    
-
+/* #margin-row{
+    margin-top: 5%;
 } */
 
-input{
+#container-box {
+    background-color: rgba(0, 0, 0, 0.799);
+    border-radius: 1em;
+    border: 3px solid rgb(0, 150, 255);
+
+}
+
+input {
     color: rgb(13, 202, 240);
     font-weight: bold;
     text-shadow: 0.08em 0.8px black;
     letter-spacing: 0.12em;
+
 }
 
 input::placeholder {
-    color: #5800FF; /* color info = rgb(13, 202, 240) */
+    color: #5800FF;
+    /* color info = rgb(13, 202, 240) */
     font-weight: bold;
     opacity: 0.5;
     text-align: center;
@@ -40,55 +37,45 @@ input::placeholder {
 }
 
 textarea {
-    border: 1px solid #0096FF;
-    border-radius: 0.5em ;
-    width: 22em;
-    height: 5em;
+    color: rgb(13, 202, 240);
+    font-weight: bold;
+    text-shadow: 0.08em 0.8px black;
+    letter-spacing: 0.12em;
+    padding-top: 1em;
+
 }
 
 textarea::placeholder {
-    color: #5800FF;
+    color: #5800FF; /* color info = rgb(13, 202, 240) */
+    opacity: 0.5;
+    font-weight: bold;
     text-align: center;
+    text-shadow: none;
 
-  }
+}
 
-label#titleParag {
+#myButton {
     display: block;
-}
-
-textarea.textParag {
-    margin: 1em 0em 2em 0em;
-}
-
-#myButton{
-    /* position: absolute; */
-    border: 2px solid #00D7FF;
-    /* border: none; */
-   background: transparent;
+    border: 2px solid rgb(13, 202, 240); /* border: none; */
+    background: transparent;
     font-family: 'Roboto', sans-serif;
     color: white;
     width: 2.5em;
     height: 2.5em;
     font-size: 2em;
     /* border-radius: 6em; */
-    opacity: .5;
-    /* top: 47vh;
-    bottom: 0px;
-    left: 0px;
-    right: 0px; */
     margin: auto;
     transition: .3s;
-  }
-  
-  #myButton:hover{
-    width: 25%;
-    height: 2%;
-    border: 2px solid #0096FF;
+}
+
+#myButton:hover {
+    text-shadow: 0.08em 0.8px black;
+    border: 4px solid #0096FF;
     background-color: #00D7FF;
-    /* background-color: rgba(365,365,365,0.5); */
     cursor: pointer;
-    color: #0096FF;
+    color: white;
     opacity: .8;
     transition: .3s;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
-  }
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+    margin: auto;
+}

@@ -29,67 +29,70 @@ error_reporting(E_ALL);
 </head>
 
 <body style="background-color: #5800FF;">
-    <div class="container-xl">
-        <div class="row d-flex justify-content-center" id="margin-row">
-            <div class="col-10 py-5 d-flex justify-content-center align-items-center bg-black text-info" id="container-box">
-                <!-- in 'action' ci va solo il 'path' (nome) del fail che voglio raggiungere  -->
-                <!-- method [GET] 'espone i dati nell'URL' && method [POST] 'non espone i dati nell'URL' -->
-                <form method="POST" action="./processing.php">
+    <div class="container-fluid">
+        <div class="row mt-1 d-flex justify-content-center align-items-center" id="margin-row">
 
-                    <div class="continer-lg text-center">
+            <div class="col-12 d-flex text-center align-items-center justify-content-center">
+                <div class="col-11 py-5 d-flex justify-content-center align-items-center text-info" id="container-box">
+                    <!-- in 'action' ci va solo il 'path' (nome) del fail che voglio raggiungere  -->
+                    <!-- method [GET] 'espone i dati nell'URL' && method [POST] 'non espone i dati nell'URL' -->
+                    <form method="POST" action="./processing.php">
 
-                        <!-- input con anagrafica (Nome & Cognome)-->
-                        <div class="anagrafe row">
+                        <div class="continer-lg text-center">
 
-                            <div class="anagInput col-12 d-flex justify-content-around text-center align-middle mt-3">
+                            <!-- input con anagrafica (Nome & Cognome)-->
+                            <div class="anagrafe row">
 
-                                <div class="mb-3">
+                                <div class="anagInput col-12 d-flex justify-content-around text-center align-middle mt-3">
 
-                                    <div class="col-12 d-flex justify-content-center gap-5 text-center">
+                                    <div class="mb-3">
 
-                                        <!-- Name -->
-                                        <div class="form-group col-6 rounded-pill border border-3 border-info py-2">
-                                            <label for="name" class="form-label h5 d-flex align-items-center align-items-start justify-content-center"> Nome </label>
-                                            <input class=" rounded-pill border border-3 border-info my-1 text-capitalize text-center" type="text" id="nome" name="nome" placeholder="Insert your Name">
+                                        <div class="col-lg-12 d-flex justify-content-center gap-4 text-center">
+
+                                            <!-- Name -->
+                                            <div class="form-group col-6 rounded-pill border border-3 border-info py-2">
+                                                <label for="name" class="form-label h5 d-flex align-items-start justify-content-center"> Nome </label>
+                                                <input class="col-10 rounded-pill border border-3 border-info my-2 text-capitalize text-center" type="text" id="nome" name="nome" placeholder="Your Name">
+                                            </div>
+
+                                            <!-- Surname -->
+                                            <div class="form-group col-6 rounded-pill border border-3 border-info py-2">
+                                                <label for="name" class="form-label h5 d-flex align-items-start justify-content-center"> Cognome </label>
+                                                <input class="col-10 rounded-pill border border-3 border-info my-2 text-capitalize text-center" type="text" id="cognome" name="cognome" placeholder="Your Surname">
+                                            </div>
+
                                         </div>
-
-                                        <!-- Surname -->
-                                        <div class="form-group col-6 rounded-pill border border-3 border-info py-2">
-                                            <label for="name" class="form-label h5 d-flex align-items-center align-items-start justify-content-center"> Cognome </label>
-                                            <input class=" rounded-pill border border-3 border-info my-1 text-capitalize text-center" type="text" id="cognome" name="cognome" placeholder="Insert your Surname">
-                                        </div>
-
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <br>
+                            <!-- Parola da censurare - censurata -->
+                            <div class="censured">
+                                <div class="row d-flex justify-content-center">
 
-                        <!-- Parola da censurare - censurata -->
-                        <div class="censured">
-                            <div class="row">
+                                    <div class="form-group col-12 rounded-pill border border-3 border-info py-2">
 
-                                <div class="form-group rounded-pill border border-3 border-info py-3">
+                                        <label for="censored_word" class="form-label h5 d-flex align-items-center align-items-start justify-content-center"> Parola da censurare </label>
+                                        <input class="col-10 rounded-pill border border-3 border-info my-2 text-capitalize text-center" type="text" id="censored_word" name="censored_word" placeholder="Insert Censorship">
+                                    </div>
 
-                                    <label for="censored_word" class="form-label h5 d-flex align-items-center align-items-start justify-content-center"> Parola da censurare </label>
-                                    <input class="rounded-pill border border-3 border-info my-3 text-capitalize text-center" type="text" id="censored_word" name="censored_word" placeholder="Insert Censorship">
                                 </div>
-
                             </div>
-                        </div>
 
-                        <br>
+                            <!-- Paragrafo text area (crei un testo con la parola da censurare) -->
+                            <div class="form-group col-12 rounded-pill border border-3 border-info py-2 my-4">
+                                <label for="paragraph" id="titleParag" class="form-label h5 d-flex align-items-center align-items-start justify-content-center"> Paragrafo </label>
+                                <textarea class="col-10 rounded-pill border border-3 border-info my-2 text-capitalize text-center" id="paragraph" name="paragraph" placeholder="Inserisci il Testo"></textarea>
+                            </div>
 
-                        <!-- Paragrafo text area (crei un testo con la parola da censurare) -->
-                        <div class="d-flex justify-conten-between">
-                            <label class="align-text-top-text-bottom" for="paragraph" id="titleParag"> Paragrafo </label>
-                            <textarea class="textParag" id="paragraph" name="paragraph" placeholder="Inserisci il Testo"></textarea>
+                            <br>
 
-                            <button class="rounded-pill" id="myButton" type="submit" value="Invia">Invia</button>
-                        </div>
-                    </div>
-                </form>
+                            <div class="col-12 mt-1">
+                                <button class="rounded-pill" id="myButton" type="submit" value="Invia">Invia</button>
+                            </div>
+
+                    </form>
+                </div>
             </div>
         </div>
     </div>
