@@ -23,9 +23,20 @@ body{
     
 
 } */
+
+input{
+    color: rgb(13, 202, 240);
+    font-weight: bold;
+    text-shadow: 0.08em 0.8px black;
+    letter-spacing: 0.12em;
+}
+
 input::placeholder {
-    color: #5800FF;
+    color: #5800FF; /* color info = rgb(13, 202, 240) */
+    font-weight: bold;
+    opacity: 0.5;
     text-align: center;
+    text-shadow: none;
 }
 
 textarea {

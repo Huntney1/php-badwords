@@ -31,9 +31,9 @@ error_reporting(E_ALL);
 <body style="background-color: #5800FF;">
     <div class="container-xl">
         <div class="row d-flex justify-content-center" id="margin-row">
-            <div class="col-10 py-5 d-flex justify-content-center align-items-center bg-black text-info" id="container-box"> <!-- top-50 start-50 translate-middle -->
+            <div class="col-10 py-5 d-flex justify-content-center align-items-center bg-black text-info" id="container-box">
                 <!-- in 'action' ci va solo il 'path' (nome) del fail che voglio raggiungere  -->
-                <!-- method [GET] 'espone i dati nell'URL' -->
+                <!-- method [GET] 'espone i dati nell'URL' && method [POST] 'non espone i dati nell'URL' -->
                 <form method="POST" action="./processing.php">
 
                     <div class="continer-lg text-center">
@@ -47,14 +47,14 @@ error_reporting(E_ALL);
 
                                     <div class="col-12 d-flex justify-content-between gap-5">
 
-                                        <div>
-                                            <label for="name" class="form-label"> Nome </label>
-                                            <input class="form-control rounded-pill border border-3 border-info" type="text" id="nome" name="nome" placeholder="Nome">
+                                        <div class="form-group col-sm-6 rounded-pill border border-3 border-info py-2">
+                                            <label for="name" class="form-label h5 d-flex align-items-center align-items-start justify-content-center"> Nome </label>
+                                            <input class=" rounded-pill border border-3 border-info text-capitalize text-center" type="text" id="nome" name="nome" placeholder="Insert your Name">
                                         </div>
 
-                                        <div>
-                                            <label for="name" class="form-label"> Cognome </label>
-                                            <input class="form-control rounded-pill border border-3 border-info" type="text" id="cognome" name="cognome" placeholder="Cognome">
+                                        <div class="form-group col-sm-6 rounded-pill border border-3 border-info py-2">
+                                            <label for="name" class="form-label h5"> Cognome </label>
+                                            <input class=" rounded-pill border border-3 border-info text-capitalize text-center" type="text" id="cognome" name="cognome" placeholder="Insert your Surname">
                                         </div>
 
                                     </div>
@@ -73,6 +73,7 @@ error_reporting(E_ALL);
                         </div>
 
                         <br>
+
                         <!-- Paragrafo text area (crei un testo con la parola da censurare) -->
                         <div class="d-flex justify-conten-between">
                             <label class="align-text-top-text-bottom" for="paragraph" id="titleParag"> Paragrafo </label>
