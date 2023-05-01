@@ -45,16 +45,18 @@ error_reporting(E_ALL);
 
                                 <div class="mb-3">
 
-                                    <div class="col-12 d-flex justify-content-between gap-5">
+                                    <div class="col-12 d-flex justify-content-center gap-5 text-center">
 
-                                        <div class="form-group col-sm-6 rounded-pill border border-3 border-info py-2">
+                                        <!-- Name -->
+                                        <div class="form-group col-6 rounded-pill border border-3 border-info py-2">
                                             <label for="name" class="form-label h5 d-flex align-items-center align-items-start justify-content-center"> Nome </label>
-                                            <input class=" rounded-pill border border-3 border-info text-capitalize text-center" type="text" id="nome" name="nome" placeholder="Insert your Name">
+                                            <input class=" rounded-pill border border-3 border-info my-1 text-capitalize text-center" type="text" id="nome" name="nome" placeholder="Insert your Name">
                                         </div>
 
-                                        <div class="form-group col-sm-6 rounded-pill border border-3 border-info py-2">
-                                            <label for="name" class="form-label h5"> Cognome </label>
-                                            <input class=" rounded-pill border border-3 border-info text-capitalize text-center" type="text" id="cognome" name="cognome" placeholder="Insert your Surname">
+                                        <!-- Surname -->
+                                        <div class="form-group col-6 rounded-pill border border-3 border-info py-2">
+                                            <label for="name" class="form-label h5 d-flex align-items-center align-items-start justify-content-center"> Cognome </label>
+                                            <input class=" rounded-pill border border-3 border-info my-1 text-capitalize text-center" type="text" id="cognome" name="cognome" placeholder="Insert your Surname">
                                         </div>
 
                                     </div>
@@ -64,12 +66,17 @@ error_reporting(E_ALL);
 
                         <br>
 
-                        <!-- parola da censurare censurata -->
+                        <!-- Parola da censurare - censurata -->
                         <div class="censured">
+                            <div class="row">
 
-                            <label for="censored_word"> Parola da censurare </label>
-                            <input class="form-control rounded-pill border border-3 border-info my-3" type="text" id="censored_word" name="censored_word" placeholder="Inserisci Censura">
+                                <div class="form-group rounded-pill border border-3 border-info py-3">
 
+                                    <label for="censored_word" class="form-label h5 d-flex align-items-center align-items-start justify-content-center"> Parola da censurare </label>
+                                    <input class="rounded-pill border border-3 border-info my-3 text-capitalize text-center" type="text" id="censored_word" name="censored_word" placeholder="Insert Censorship">
+                                </div>
+
+                            </div>
                         </div>
 
                         <br>
