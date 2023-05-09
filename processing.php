@@ -47,8 +47,14 @@ $censored_paragraph = str_replace($censored_word, '***', $paragraph);
                     </h1>
                     <h2 class="text-light text-capitalize text-center">
                         <?php echo $nome . " " . $cognome; ?>
+
+                        <!-- Descrizione -->
+                        <span class="text-center">
+                        <p class="h3 mt-5 py-4 px-2">
+                            Nel Paragrafo affianco verranno indicate tutte le parti di ragionamento create con PHP.
+                        </p>
+                        </span>
                     </h2>
-                    
                 </div>
 
                 <div class="parag shadow rounded-end-4 m-2">
@@ -77,8 +83,8 @@ $censored_paragraph = str_replace($censored_word, '***', $paragraph);
                         <?php echo "La frase ha la lunghezza di: " . strlen($paragraph) . " caratteri contando gli spazi vuoti.!."; ?>
                     </h1>
                 </div>
-            
-            </div>  
+
+            </div>
         </div>
     </div>
 
