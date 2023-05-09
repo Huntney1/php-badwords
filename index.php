@@ -1,10 +1,3 @@
-<?php
-//servono per mostrare gli errori
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,7 +29,7 @@ error_reporting(E_ALL);
                 <div class="col-11 py-5 d-flex justify-content-center align-items-center text-info" id="container-box">
                     <!-- in 'action' ci va solo il 'path' (nome) del fail che voglio raggiungere  -->
                     <!-- method [GET] 'espone i dati nell'URL' && method [POST] 'non espone i dati nell'URL' -->
-                    <form method="POST" action="./processing.php">
+                    <form method="post" action="processing.php">
 
                         <div class="continer-lg text-center">
 
@@ -73,7 +66,7 @@ error_reporting(E_ALL);
                                     <div class="form-group col-12 rounded-pill border border-3 border-info py-2">
 
                                         <label for="censored_word" class="form-label h5 d-flex align-items-center align-items-start justify-content-center"> Parola da censurare </label>
-                                        <input class="col-10 rounded-pill border border-3 border-info my-2 text-capitalize text-center" type="text" id="censored_word" name="censored_word" placeholder="Insert Censorship">
+                                        <input class="col-10 rounded-pill border border-3 border-info my-2 text-capitalize text-center" type="text" name="censored_word" id="censored_word" placeholder="Insert Censorship">
                                     </div>
 
                                 </div>
@@ -81,7 +74,7 @@ error_reporting(E_ALL);
 
                             <!-- Paragrafo text area (crei un testo con la parola da censurare) -->
                             <div class="form-group col-12 rounded-pill border border-3 border-info py-2 my-4">
-                                <label for="paragraph" id="titleParag" class="form-label h5 d-flex align-items-center align-items-start justify-content-center"> Paragrafo </label>
+                                <label for="paragraph" id="paragraph" class="form-label h5 d-flex align-items-center align-items-start justify-content-center"> Paragrafo </label>
                                 <textarea class="col-10 rounded-pill border border-3 border-info my-2 text-capitalize text-center" id="paragraph" name="paragraph" placeholder="Inserisci il Testo"></textarea>
                             </div>
 
@@ -96,10 +89,10 @@ error_reporting(E_ALL);
             </div>
         </div>
     </div>
-    <!-- JavaScript CDN Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <!-- JavaScript Personal -->
     <script type="text/javascript" src="./js/script.js"></script>
+    <!-- JavaScript CDN Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 
 </html>
